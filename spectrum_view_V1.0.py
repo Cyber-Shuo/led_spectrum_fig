@@ -46,33 +46,33 @@ def gauss_fit(a, A, fit_A_list):
 
 fig, ax = plt.subplots()
 
-path_a = Path("D:\STUDY_think\Data\\fiber_Collimators_data\\domestic-led-427nm-filter.txt")
+path_a = Path("your path")
 a, A, total_A, mean_A, fit_A_list  = [],[],0,0,[]
 getdata(path_a, a, A, total_A, mean_A)
 gauss_fit(a, A, fit_A_list)
-ax.plot(a, fit_A_list, color = 'r', label = 'domestic-led-427nm-filter-gaussfit')
-ax.plot(a, A, '.', markersize = 0.3, color = 'black', label = 'domestic-led-427nm-filter')
+ax.plot(a, fit_A_list, color = 'r', label = 'file name')
+ax.plot(a, A, '.', markersize = 0.3, color = 'black', label = 'file name')
 
-path_b = Path("D:\STUDY_think\Data\\fiber_Collimators_data\\domestic-led.txt")
+path_b = Path("your path")
 b, B, total_B, mean_B, fit_B_list  = [],[],0,0,[]
 getdata(path_b, b, B, total_B, mean_B)
 gauss_fit(b, B, fit_B_list)
-ax.plot(b, fit_B_list, color = 'g', label = 'domestic-led-gaussfit')
-ax.plot(b, B, 'x', markersize = 0.3, color = 'black', label = 'domestic-led')
+ax.plot(b, fit_B_list, color = 'g', label = 'file name')
+ax.plot(b, B, 'x', markersize = 0.3, color = 'black', label = 'file name')
 
-path_c = Path("D:\STUDY_think\Data\\fiber_Collimators_data\\austrian-led-427nm-filter.txt")
+path_c = Path("your path")
 c, C, total_C, mean_C, fit_C_list  = [],[],0,0,[]
 getdata(path_c, c, C, total_C, mean_C)
 gauss_fit(c, C, fit_C_list)
-ax.plot(c, fit_C_list, color = 'b', label = 'austrian-led-427nm-filter-gaussfit')
-ax.plot(c, C, '--', markersize = 0.3, color = 'black', label = 'austrian-led-427nm-filter')
+ax.plot(c, fit_C_list, color = 'b', label = 'file name')
+ax.plot(c, C, '--', markersize = 0.3, color = 'black', label = 'file name')
 
-path_d = Path("D:\STUDY_think\Data\\fiber_Collimators_data\\austrian-led.txt")
+path_d = Path("your path")
 d, D, total_D, mean_D, fit_D_list  = [],[],0,0,[]
 getdata(path_d, d, D, total_D, mean_D)
 gauss_fit(d, D, fit_D_list)
-ax.plot(d, fit_D_list, color = 'y', label = 'austrian-led-gaussfit')
-ax.plot(d, D, 'o', markersize = 0.3, color = 'black', label = 'austrian-led')
+ax.plot(d, fit_D_list, color = 'y', label = 'file name')
+ax.plot(d, D, 'o', markersize = 0.3, color = 'black', label = 'file name')
 
 
 plt.xlabel('wavelength/nm')
